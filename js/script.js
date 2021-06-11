@@ -34,3 +34,58 @@ for(x=1;x<16;x++){
 
 //In seguito deve chiedere all’utente per (100 - 16) volte di inserire un numero alla volta, sempre compreso tra 1 e 100.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// non so ancora se funziona 
+
+/*  var randomnumber=[];
+for(var i=0;i<16;i++){
+    var number = Math.floor(Math.random()* max)+min;
+    randomnumber.push(number);
+    var nuovo = true;
+    for(var j=0; j<i; j++){
+        if(randomnumber[j]==number);
+            nuovo=false;
+        }
+        if(nuovo){
+            randomnumber[i]=number;
+        }else{
+            i--;
+        }
+    }
+     */
