@@ -11,13 +11,26 @@
 var output = document.getElementById("output");
 
 //Il computer deve generare 16 numeri casuali tra 1 e 100.
-function randomPcNumber(min,max){
-    for(i=0;i<16;i++) {
-        var number =  Math.floor(Math.random()*(max - min +1 ))+min;
-        return number;
+
+var max = 100
+var min = 1;
+var randomnumber=[];
+
+for(i=0;i<16;i++) {
+    var number =  Math.floor(Math.random()*(max - min +1 ))+min;
+    randomnumber.push(number);
+}
+console.log(randomnumber);
+
+//I numeri non possono essere duplicati.
+
+for(x=1;x<16;x++){
+    if(randomnumber[0]===randomnumber[x]){
+        var fixnum = randomnumber[0]+randomnumber[x];
+        randomnumber.push(fixnum);   
+        alert("diamine")
     }
 }
 
-var randomNumber = randomPcNumber(1,100);
+//In seguito deve chiedere all’utente per (100 - 16) volte di inserire un numero alla volta, sempre compreso tra 1 e 100.
 
- output.innerHTML+=randomNumber;
