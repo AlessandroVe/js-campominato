@@ -24,10 +24,7 @@ while(randomnumber.length < 16){
         randomnumber.push(number);
     }
 }
-/* for(i=0;i<16;i++) {
-    var number =  Math.floor(Math.random()*(max - min +1 ))+min;
-    randomnumber.push(number);
-} */
+
 console.log(randomnumber);
 
 
@@ -68,55 +65,3 @@ if(gameOver){
  alert("il tuo punteggio e' "+ userNums.length);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// non so ancora se funziona 
-
-/*  var randomnumber=[];
-for(var i=0;i<16;i++){
-    var number = Math.floor(Math.random()* max)+min;
-    randomnumber.push(number);
-    var nuovo = true;
-    for(var j=0; j<i; j++){
-        if(randomnumber[j]==number);
-            nuovo=false;
-        }
-        if(nuovo){
-            randomnumber[i]=number;
-        }else{
-            i--;
-        }
-    }
-     */
